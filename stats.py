@@ -20,8 +20,6 @@ def char_count(text):
 
 def sort_report(char_counts):
     report_list = list(char_counts.items())
-    # for char, count in char_counts.items():
-    #report_list.append({char: count})
 
     def sort_by_count(item):
         return item[1]
