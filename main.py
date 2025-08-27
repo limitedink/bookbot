@@ -7,8 +7,12 @@ def get_book_text(filepath):
 
 
 def main():
+    if len(sys.argv) < 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
     filepath = sys.argv[1]
     outputtext = get_book_text(filepath)
+    
     wc = word_count(outputtext)
     cc = char_count(outputtext)
     report = ""
